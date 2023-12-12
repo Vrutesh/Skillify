@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Exo;
+    src: url(./assets/Fonts/Exo-VariableFont_wght.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo";
+}
