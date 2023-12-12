@@ -1,3 +1,7 @@
+# Skillify
+
+Skillify is a user-friendly and versatile skill assessment platform designed to help individuals evaluate and enhance their abilities. Whether you're a professional honing your expertise or a newcomer looking to identify areas for improvement, SkillCheckPro has you covered.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
