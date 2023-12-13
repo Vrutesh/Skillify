@@ -5,7 +5,9 @@ import Home from "./Pages/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
-import Quiz from "./Pages/Quiz/Quiz";
+import About from "./Pages/About/About";
+import Quiz from "./Pages/Quiz/Quiz"
+import {jsQuizz} from "./assets/Questions/Questions"
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<><Navbar /><Login /></>}/>
             <Route path="/register" element={<><Navbar/><Register /></>} />
-            <Route path="/quiz" element={<><Navbar/><Quiz /></>} />
+            <Route path="/about" element={<><Navbar/><About /></>} />
+            <Route path="/quiz/frontend-development" element={<><Quiz questions={jsQuizz.questions}/></>} />
           </Routes>
         </Router>
       </div>

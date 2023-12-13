@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    margin: 0 auto;
+}
+
+.info-section{
+    margin: 0 190px;
+}
+
+.content-mr{
+    margin: 0 50px;
+}
+
+.quiz-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
+
+.quiz-heading h1{
+    font-size: 3rem;
+    padding: 40px 0 20px;
+}
+
+.quiz-heading p{
+    font-weight: 500;
+    text-align: justify;
+}
+
+.quiz-menu{
+    margin: 30px 0;
+}
+
+.quiz-menu ul{
+    display: flex;
+    gap: 20px;
+}
+
+.quiz-menu ul li{
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.quiz-menu ul li a:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 60%;
+    background-color: rgb(6, 138, 254);
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+  }
+  
+.quiz-menu ul li a:hover::after {
+    transform: scaleX(1);
+  }
+
+
+.about-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.about-section p{
+    text-align: justify;
+    font-weight: 540;
+    line-height: 1.7rem;
+}
+
+.skill-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+.skills-section{
+    padding-bottom: 80px ;
+}
+
+.skills-section h1{
+    padding: 20px 0 30px;
+}
+
+.card{
+    width: 370px;
+    height: 280px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: justify;
+    padding: 0 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 2px 20px, rgba(17, 17, 26, 0.1) 0px 4px 10px;
+    transition: .5s;
+}
+
+.card:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgb(6, 138, 254) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    transform: scale(1.09);
+}
+
+.card i{
+    color: #1872CD;
+    filter: drop-shadow(0px 4px 4px rgb(192, 243, 255));
+    text-align: center;
+    font-size: 60px;
+}
+
+.card h2{
+    text-align: center;
+}
+
+.what-to-learn{
+    padding-bottom: 80px;
+}
+
+.what-to-learn h1{
+    padding: 40px 0;
+}
+
+.faq-section{
+    padding-bottom: 80px;
+}
+
+.faq-section h1{
+    padding: 20px 0;
+}
+
+.faq-section p{
+    text-align: justify;
+}
+
+.gototopbtn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 50%;
+    border: none;
+}
+
+.gototopbtn-border{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 4.34%;
+    right: 4.61%;
+    border-radius: 50%;
+    border: none;
+    background-color: #1872CD;
+}

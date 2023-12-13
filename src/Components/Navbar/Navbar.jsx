@@ -37,10 +37,10 @@ function Navbar(){
           autoWidth
           label="Quiz"
         >
-            <MenuItem value="">
-            <em>None</em>
+            <MenuItem value={"Test"}>
+            <Link to={"/about"}>None</Link>
           </MenuItem>
-          <MenuItem value={"FrontendDevelopment"}><Link to={"/quiz"}>Frontend Development</Link></MenuItem>
+          <MenuItem value={"FrontendDevelopment"}><Link to={"/about"}>Frontend Development</Link></MenuItem>
           
          
         </Select>

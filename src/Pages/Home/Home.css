@@ -47,23 +47,36 @@ video{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     
-}
-
-.main-container h1{
+  }
+  
+  .main-container h1{
     color: white;
     font-size: 5rem;
+  }
+  
+  .main-container p{
+  padding-bottom: 20px;
+  color: #b5b4b4;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .signup-field{
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
+}
+
+#filled-basic{
+  width: 18rem;
 }
 
 .button-36 {
   background: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
   border-style: none;
+  border-radius: 0 20px 20px 0 ;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
