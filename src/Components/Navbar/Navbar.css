@@ -29,10 +29,11 @@ nav {
   width: 40%;
   padding-left: 50px;
   display: flex;
+  gap: 20px;
 }
 
-.nav-menu ul li{
-  color: #000;
+.menu-btn i{
+  padding-left: 10px;
 }
 
 

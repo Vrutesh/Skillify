@@ -8,6 +8,10 @@ import Register from "./Pages/Register/Register";
 import About from "./Pages/About/About";
 import Quiz from "./Pages/Quiz/Quiz"
 import {jsQuizz} from "./assets/Questions/Questions"
+import Footer from "./Components/Footer/Footer";
+import Frontend from "./Pages/Frontend/Frontend";
+
+
 
 function App() {
   return (
@@ -18,8 +22,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<><Navbar /><Login /></>}/>
             <Route path="/register" element={<><Navbar/><Register /></>} />
-            <Route path="/about" element={<><Navbar/><About /></>} />
-            <Route path="/quiz/frontend-development" element={<><Quiz questions={jsQuizz.questions}/></>} />
+            <Route path="/about" element={<><Navbar/><About /><Footer/></>} />
+            <Route path="/quiz/frontend-development" element={<><Navbar/><Frontend /><Footer/></>} />
+            <Route path="/quiz/frontend-development/questions" element={<><Quiz questions={jsQuizz.questions}/></>} />
           </Routes>
         </Router>
       </div>

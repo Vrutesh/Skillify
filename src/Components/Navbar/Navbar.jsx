@@ -2,10 +2,9 @@ import React from "react"
 import './Navbar.css'
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
-import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import Menu from '@mui/material/Menu';
+
 
 
 
@@ -16,6 +15,15 @@ function Navbar(){
       setQuiz(event.target.value);
     };
 
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+      setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+      setAnchorEl(null);
+    };
+
     return(
         <>
          <header>
@@ -23,28 +31,37 @@ function Navbar(){
                     <div className="nav-logo">
                         <Link to={"/"}><h1>SKILLIFY</h1></Link>
                     </div>
-                    <div className="nav-menu">
-                    
-                            
-                                
-       <FormControl sx={{ m: 1, minWidth: 100 }}>
-        <InputLabel id="demo-simple-select-autowidth-label" sx={{width:"200px"}}>Test</InputLabel>
-        <Select
-          labelId="demo-simple-select-autowidth-label"
-          id="demo-simple-select-autowidth"
-          value={quiz}
-          onChange={handleChange}
-          autoWidth
-          label="Quiz"
-        >
-            <MenuItem value={"Test"}>
-            <Link to={"/about"}>None</Link>
-          </MenuItem>
-          <MenuItem value={"FrontendDevelopment"}><Link to={"/about"}>Frontend Development</Link></MenuItem>
-          
-         
-        </Select>
-      </FormControl>
+                    <div className="nav-menu"> 
+                    <Link to={"/about"}><Button
+        id="basic-button" sx={{color:"black"}}
+      >
+        About 
+        
+      </Button>                               </Link>
+                    <Button
+        id="basic-button" className="menu-btn"
+        aria-controls={open ? 'basic-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick} sx={{color:"black"}}
+      >
+        Test 
+        <i class="fa-solid fa-angle-down"></i>
+      </Button>
+      <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        onChange={handleChange}
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
+        }}
+      >
+        <Link to={"/quiz/frontend-development"}><MenuItem onClick={handleClose}>Frontend Development</MenuItem></Link>
+        <MenuItem onClick={handleClose}>Backend Development</MenuItem>
+        <MenuItem onClick={handleClose}>Full Stack Development</MenuItem>
+      </Menu>
 
                        
                     </div>

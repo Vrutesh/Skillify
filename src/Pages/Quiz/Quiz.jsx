@@ -77,7 +77,7 @@ function Quiz({questions}){
                     {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
               </Button>
             <Link to={"/about"}>
-                <button className="exit-btn">Exit Quiz</button>
+            <Button variant="outlined" color="error">EXIT QUIZ</Button>
             </Link>
             
             
