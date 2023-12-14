@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
+
 function Quiz({questions}){
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [answerIdx, setAnswerIdx] = useState(null)
