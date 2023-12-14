@@ -4,6 +4,7 @@ import Homebg from "../../assets/Images/bg2.mp4"
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
+import homelogo from "../../assets/Images/homepagelogo.png"
 
 
 function Home(){
@@ -11,8 +12,8 @@ function Home(){
         <>
          <div className="bg-container">
             <div className="overlay">
-                <div className="nav-tab">
-                 <h1>Skillify</h1>
+                <div className="nav-tab mr">
+                <img src={homelogo} alt="logo"/>
                  <Link to={"/login"}><Button variant="outlined">Sign In</Button></Link>
                 </div>
             <video src={Homebg} autoPlay loop muted />

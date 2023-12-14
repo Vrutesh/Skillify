@@ -1,14 +1,15 @@
 import "./Footer.css"
 import React from "react"
 import { Link } from "react-router-dom"
+import logo from "../../assets/Images/logo.png"
 
 function Footer(){
     return(
         <>
         <footer>
             <div className="footer-logo">
-             <Link to={"/"}>
-                <h1>SKILLIFY</h1></Link>
+             <Link to={"/"}><img src={logo} alt="logo" />
+                </Link>
             </div>
             <div className="footer-social">
             <i class="bi bi-instagram"></i>

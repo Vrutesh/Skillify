@@ -13,13 +13,6 @@ section{
     margin: 0 auto;
 }
 
-.info-section{
-    margin: 0 190px;
-}
-
-.content-mr{
-    margin: 0 50px;
-}
 
 .quiz-heading{
     display: flex;
@@ -34,6 +27,7 @@ section{
 
 .quiz-heading p{
     font-weight: 500;
+    line-height: 1.7rem;
     text-align: justify;
 }
 

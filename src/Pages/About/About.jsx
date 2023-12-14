@@ -3,11 +3,19 @@ import "./About.css";
 
 
 
+
 function About() {
   return(
-    <>
-    <h1>Hello</h1>
-    </>
+    <div className="mr">
+     <section>
+      <div className="hero-section">
+        <h1>Skillify</h1>
+        <h4>Leading Quiz Platform for Skill Excellence</h4>
+      </div>
+    
+     </section>
+   
+    </div>
   );
 }
 

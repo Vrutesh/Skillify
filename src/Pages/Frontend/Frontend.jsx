@@ -66,8 +66,7 @@ function Frontend() {
   return (
     <>
       <section>
-        <div className="info-section">
-          <div className="content-mr">
+        <div className="info-section mr">
             <div className="quiz-heading" id="main-container">
               <h1>Frontend Development Test</h1>
               <h2>Overview</h2>
@@ -79,7 +78,7 @@ function Frontend() {
                 assessing candidates' skills in building effective and
                 interactive frontend solutions.
               </p>
-              <Link to={"/quiz/frontend-development/question"}><Button
+              <Link to={"/quiz/frontend-development/questions"}><Button
                 variant="contained"
                 sx={{ width: "160px", height: "40px" }}
               >
@@ -301,7 +300,7 @@ Furthermore, candidates may be tested on their familiarity with version control 
           </div>
 
           <span className="gototopbtn-border"><a href="#main-container" className="gototopbtn"><i class="fa-solid fa-arrow-up"></i></a></span>
-        </div>
+       
 </section>
     </>
   );

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
+import logo from "../../assets/Images/logo.png"
 
 
 
@@ -27,9 +28,9 @@ function Navbar(){
     return(
         <>
          <header>
-            <nav>
+            <nav className="mr">
                     <div className="nav-logo">
-                        <Link to={"/"}><h1>SKILLIFY</h1></Link>
+                        <Link to={"/"}> <img src={logo} alt="logo" /> </Link>
                     </div>
                     <div className="nav-menu"> 
                     <Link to={"/about"}><Button
