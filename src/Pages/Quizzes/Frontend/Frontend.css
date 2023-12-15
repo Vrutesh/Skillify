@@ -88,8 +88,6 @@ section {
 }
 
 .card {
-  width: 370px;
-  height: 280px;
   border: none;
   border-radius: 30px;
   display: flex;
@@ -97,7 +95,6 @@ section {
   gap: 20px;
   justify-content: center;
   text-align: justify;
-  padding: 0 20px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 2px 20px, rgba(17, 17, 26, 0.1) 0px 4px 10px;
   transition: 0.5s;

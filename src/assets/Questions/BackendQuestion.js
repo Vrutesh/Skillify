@@ -1,22 +1,23 @@
-export const jsQuizz = {
-  questions: [
+export const jsQuizzBackend = {
+  backendquestions: [
     {
       question:
-        "Which of the following is used in React.js to increase performance?",
-      choices: [
-        "Virtual DOM",
-        "Original DOM",
-        "Both A and B",
-        "None of the above",
-      ],
+        "Which of the following HTTP methods is commonly used for retrieving data from a server?",
+      choices: ["POST", "GET", "PUT", "DELETE"],
       type: "MCQs",
-      correctAnswer: "Virtual DOM",
+      correctAnswer: "GET",
     },
     {
-      question: " Are the negative values allowed in padding property?",
-      choices: ["Yes", "No", "Can't say", "May be"],
+      question:
+        "What does CRUD stand for in the context of database operations?",
+      choices: [
+        "Create, Read, Update, Delete",
+        "Copy, Rename, Update, Delete",
+        "Connect, Retrieve, Update, Deploy",
+        "Collect, Read, Update, Debug",
+      ],
       type: "MCQs",
-      correctAnswer: "No",
+      correctAnswer: "Create, Read, Update, Delete",
     },
     {
       question:
