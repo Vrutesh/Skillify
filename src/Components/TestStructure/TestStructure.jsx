@@ -1,5 +1,4 @@
-// import { Button } from "@mui/material";
-import Btn from "../../Common/Btn/Btn";
+import { Button } from "@mui/material";
 
 function TestStructure({
   teststructureheading,
@@ -9,6 +8,10 @@ function TestStructure({
   conditioninfo,
   marks,
   type,
+  btnheading1,
+  btnheading2,
+  btnheading3,
+  btnheading4,
 }) {
   return (
     <>
@@ -21,10 +24,10 @@ function TestStructure({
           <p className="round-1-info">{roundinfo}</p>
           <div className="skill-container">
             <h3>{skillcontainerheading}Topics -</h3>
-            <Btn btnlabel={"HTML5"} />
-            <Btn btnlabel={"CSS3"} />
-            <Btn btnlabel={"Javascript"} />
-            <Btn btnlabel={"React JS"} />
+            <Button variant="contained">{btnheading1}</Button>
+            <Button variant="contained">{btnheading2}</Button>
+            <Button variant="contained">{btnheading3}</Button>
+            <Button variant="contained">{btnheading4}</Button>
           </div>
           <div className="round-1-conditions">
             <p>{conditioninfo}</p>

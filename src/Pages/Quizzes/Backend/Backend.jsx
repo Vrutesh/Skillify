@@ -71,12 +71,8 @@ function Backend() {
           <TestHeading
             testheading="Backend Development Test"
             overview="Overview"
-            testinfo=" Backend development assessments evaluate candidates'
-                proficiency in HTML, CSS, and JavaScript to create responsive
-                and visually appealing user interfaces. These assessments often
-                include tasks related to web technologies and frameworks,
-                assessing candidates' skills in building effective and
-                interactive frontend solutions."
+            testinfo=" 
+            Backend development with Node.js, Express.js, MongoDB, and JavaScript involves crafting server-side logic for web applications. Node.js enables efficient, non-blocking event-driven servers, while Express.js simplifies building robust APIs. MongoDB, a NoSQL database, stores and retrieves data, offering flexibility. JavaScript, both on the server (Node.js) and client (frontend), facilitates seamless code integration. This tech stack empowers developers to create scalable, real-time applications, emphasizing agility and versatility in handling data." testlink="/quiz/backend-development/questions"
           />
 
           <AboutTest
@@ -114,7 +110,7 @@ function Backend() {
             skillcontainerheading="Topics -"
             conditioninfo="● Score more than 20 marks out of 25 to qualify for the next round."
             marks="Total marks - 25"
-            type="Aptitude"
+            type="Aptitude" btnheading1="Node Js" btnheading2="Express Js" btnheading3="Mongo DB" btnheading4="javascript"
           />
 
           <section className="what-to-learn" id="roadmap">

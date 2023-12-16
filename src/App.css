@@ -3,6 +3,10 @@
   src: url(./assets/Fonts/Exo-VariableFont_wght.ttf);
 }
 
+:root{
+  --primary-color: rgb(6, 138, 254);
+}
+
 * {
   margin: 0;
   padding: 0;

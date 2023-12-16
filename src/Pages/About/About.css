@@ -107,7 +107,7 @@
   font-size: 3rem;
   font-weight: 700;
   padding-right: 20px;
-  color: rgb(6, 138, 254);
+  color: var(--primary-color);
 }
 
 .faq-about-skillify p {

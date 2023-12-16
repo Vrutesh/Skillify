@@ -1,10 +1,10 @@
-import { resultInitialState } from "../../assets/Questions/Questions";
+import { resultInitialState} from "../../assets/Questions/Questions"
 import "./Quiz.css";
 import { useState } from "react";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
-function Quiz({ questions }) {
+function FrontendQuiz({ questions }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answerIdx, setAnswerIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
@@ -51,12 +51,14 @@ function Quiz({ questions }) {
   };
   return (
     <>
-      <div className="quiz-container">
-        <div className="quiz-container2">
+      <div className="quiz-section">
+        <div className="quiz-container">
           {!showResult ? (
             <>
-              <span className="active-question-no">{currentQuestion + 1}</span>
-              <span className="total-question">/{questions.length}</span>
+              <div className="score-tab">
+              <span className="active-question-no">{currentQuestion + 1}<span className="total-question">/{questions.length}</span></span>
+              <p className="active-score"><h5>Score :-</h5> <span className="active-correctanswer">{result.correctAnswer}</span><span className="totalquestion-tab">/{questions.length}</span></p>
+            </div>
               <h2 className="question-heading">{question}</h2>
               <ul className="list">
                 {choices.map((answer, index) => (
@@ -71,7 +73,7 @@ function Quiz({ questions }) {
               </ul>
               <div className="footer">
                 <Button
-                  variant="contained"
+                  variant="contained" 
                   onClick={onNext}
                   disabled={answerIdx === null}
                 >
@@ -110,7 +112,7 @@ function Quiz({ questions }) {
                 >
                   Try Again
                 </Button>
-                <Link to={"/about"}>
+                <Link to={"/quiz/frontend-development"}>
                   <Button variant="contained">Back to About Page</Button>
                 </Link>
               </div>
@@ -122,4 +124,4 @@ function Quiz({ questions }) {
   );
 }
 
-export default Quiz;
+export default FrontendQuiz;

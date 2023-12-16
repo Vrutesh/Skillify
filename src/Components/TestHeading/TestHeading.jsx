@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 
-function TestHeading({ testheading, overview, testinfo }) {
+function TestHeading({ testheading, overview, testinfo, testlink }) {
   return (
     <>
       <div className="quiz-heading" id="main-container">
         <h1>{testheading}</h1>
         <h2>{overview}</h2>
         <p>{testinfo}</p>
-        <Link to={"/quiz/frontend-development/questions"}>
+        <Link to={testlink}>
           <Button variant="contained" sx={{ width: "160px", height: "40px" }}>
             Start Quiz
           </Button>
