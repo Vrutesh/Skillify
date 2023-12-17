@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import Slogoblack from "../../assets/Images/S-logoblack.png";
+// import Herobg from "../../assets/Images/Herobackground."
 
 function About() {
   return (
@@ -13,7 +14,9 @@ function About() {
             <h4>Leading Quiz Platform for Skill Excellence</h4>
             <p></p>
           </div>
-          <div className="right-hero-section"></div>
+          <div className="right-hero-section">
+          {/* <video src={Herobg} autoPlay loop muted /> */}
+          </div>
         </div>
       </section>
 
