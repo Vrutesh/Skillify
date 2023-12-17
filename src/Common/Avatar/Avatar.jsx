@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Badge from "@mui/material/Badge";
 import Avatar from "@mui/material/Avatar";
-import PersonIcon from "@mui/icons-material/Person";
+import profilepic from "../../assets/Images/profilepic.png"
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -46,7 +46,7 @@ export default function BadgeAvatars() {
       anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
       variant="dot"
     >
-      <Avatar src={PersonIcon} sx={{ backgroundColor: "aliceblue" }} />
+      <Avatar src={profilepic} sx={{ backgroundColor: "aliceblue" }} />
     </StyledBadge>
   );
 }

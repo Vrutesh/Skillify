@@ -14,8 +14,7 @@ import TestStructure from "../../../Components/TestStructure/TestStructure";
 import FAQs from "../../../Components/FAQs/FAQs";
 import SkillCard from "../../../Components/SkillCard/SkillCard";
 import ProgressBtn from "../../../Components/ProgressBtn/ProgressBtn";
-import Frontendroadmap from "../../../assets/Roadmaps/frontendRoadmap.pdf"
-
+import Frontendroadmap from "../../../assets/Roadmaps/frontendRoadmap.pdf";
 
 const steps = [
   {
@@ -50,7 +49,6 @@ const steps = [
 ];
 
 function Frontend() {
-
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -76,7 +74,8 @@ function Frontend() {
                 and visually appealing user interfaces. These assessments often
                 include tasks related to web technologies and frameworks,
                 assessing candidates' skills in building effective and
-                interactive frontend solutions." testlink="/quiz/frontend-development/questions"
+                interactive frontend solutions."
+            testlink="/quiz/frontend-development/questions"
           />
 
           <AboutTest
@@ -119,7 +118,11 @@ function Frontend() {
             skillcontainerheading="Topics -"
             conditioninfo="● Score more than 20 marks out of 25 to qualify for the next round."
             marks="Total marks - 25"
-            type="Aptitude" btnheading1="HTML5" btnheading2="CSS3" btnheading3="Javascript" btnheading4="React JS"
+            type="Aptitude"
+            btnheading1="HTML5"
+            btnheading2="CSS3"
+            btnheading3="Javascript"
+            btnheading4="React JS"
           />
 
           <section className="what-to-learn" id="roadmap">
@@ -173,15 +176,10 @@ function Frontend() {
                 </Paper>
               )}
             </Box>
- 
-           
+
             <div className="roadmap-btn">
-              <ProgressBtn pdflink={Frontendroadmap}/>
-            </div>             
-            
-            
-                           
-                         
+              <ProgressBtn pdflink={Frontendroadmap} />
+            </div>
           </section>
 
           <FAQs

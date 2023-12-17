@@ -16,7 +16,6 @@ import SkillCard from "../../../Components/SkillCard/SkillCard";
 import ProgressBtn from "../../../Components/ProgressBtn/ProgressBtn";
 import Backendroadmap from "../../../assets/Roadmaps/backendroadmap.pdf";
 
-
 const steps = [
   {
     label: "Learn Fundamentals",
@@ -132,7 +131,7 @@ function Backend() {
                   <Step key={step.label}>
                     <StepLabel
                       optional={
-                        index === 6 ? (
+                        index === 7 ? (
                           <Typography variant="caption">Last step</Typography>
                         ) : null
                       }
@@ -173,7 +172,7 @@ function Backend() {
               )}
             </Box>
             <div className="roadmap-btn">
-              <ProgressBtn pdflink={Backendroadmap}/>
+              <ProgressBtn pdflink={Backendroadmap} />
             </div>
           </section>
 

@@ -3,8 +3,7 @@ import "./Quiz.css";
 import { useState } from "react";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import AlertMsg from "../../Common/AlertMsg/AlertMsg"
-
+import AlertMsg from "../../Common/AlertMsg/AlertMsg";
 
 function BackendQuiz({ backendquestions }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,7 +12,8 @@ function BackendQuiz({ backendquestions }) {
   const [result, setResult] = useState(resultInitialState);
   const [showResult, setShowResult] = useState(false);
 
-  const { question, choices, correctAnswer } = backendquestions[currentQuestion];
+  const { question, choices, correctAnswer } =
+    backendquestions[currentQuestion];
 
   const onAnswerClick = (answer, index) => {
     setAnswerIdx(index);
@@ -37,7 +37,6 @@ function BackendQuiz({ backendquestions }) {
             ...prev,
             wrongAnswers: prev.wrongAnswers + 1,
           }
-          
     );
 
     if (currentQuestion !== backendquestions.length - 1) {
@@ -58,11 +57,24 @@ function BackendQuiz({ backendquestions }) {
         <div className="quiz-container">
           {!showResult ? (
             <>
-            <div className="score-tab">
-              <span className="active-question-no">{currentQuestion + 1}<span className="total-question">/{backendquestions.length}</span></span>
-              <p className="active-score"><h5>Score :-</h5> <span className="active-correctanswer">{result.correctAnswer}</span><span className="totalquestion-tab">/{backendquestions.length}</span></p>
-            </div>
-              
+              <div className="score-tab">
+                <span className="active-question-no">
+                  {currentQuestion + 1}
+                  <span className="total-question">
+                    /{backendquestions.length}
+                  </span>
+                </span>
+                <p className="active-score">
+                  <h5>Score :-</h5>{" "}
+                  <span className="active-correctanswer">
+                    {result.correctAnswer}
+                  </span>
+                  <span className="totalquestion-tab">
+                    /{backendquestions.length}
+                  </span>
+                </p>
+              </div>
+
               <h2 className="question-heading">{question}</h2>
               <ul className="list">
                 {choices.map((answer, index) => (
@@ -81,10 +93,11 @@ function BackendQuiz({ backendquestions }) {
                   onClick={onNext}
                   disabled={answerIdx === null}
                 >
-                  {currentQuestion === backendquestions.length - 1 ? "Finish" : "Next"}
-            
+                  {currentQuestion === backendquestions.length - 1
+                    ? "Finish"
+                    : "Next"}
                 </Button>
-                <AlertMsg testlink={"/quiz/backend-development"}/>
+                <AlertMsg testlink={"/quiz/backend-development"} />
               </div>
             </>
           ) : (

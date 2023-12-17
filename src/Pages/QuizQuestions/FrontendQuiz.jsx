@@ -1,10 +1,9 @@
-import { resultInitialState} from "../../assets/Questions/Questions"
+import { resultInitialState } from "../../assets/Questions/Questions";
 import "./Quiz.css";
 import { useState } from "react";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
-import AlertMsg from "../../Common/AlertMsg/AlertMsg"
-
+import AlertMsg from "../../Common/AlertMsg/AlertMsg";
 
 function FrontendQuiz({ questions }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -58,9 +57,18 @@ function FrontendQuiz({ questions }) {
           {!showResult ? (
             <>
               <div className="score-tab">
-              <span className="active-question-no">{currentQuestion + 1}<span className="total-question">/{questions.length}</span></span>
-              <p className="active-score"><h5>Score :-</h5> <span className="active-correctanswer">{result.correctAnswer}</span><span className="totalquestion-tab">/{questions.length}</span></p>
-            </div>
+                <span className="active-question-no">
+                  {currentQuestion + 1}
+                  <span className="total-question">/{questions.length}</span>
+                </span>
+                <p className="active-score">
+                  <h5>Score :-</h5>{" "}
+                  <span className="active-correctanswer">
+                    {result.correctAnswer}
+                  </span>
+                  <span className="totalquestion-tab">/{questions.length}</span>
+                </p>
+              </div>
               <h2 className="question-heading">{question}</h2>
               <ul className="list">
                 {choices.map((answer, index) => (
@@ -75,13 +83,13 @@ function FrontendQuiz({ questions }) {
               </ul>
               <div className="footer">
                 <Button
-                  variant="contained" 
+                  variant="contained"
                   onClick={onNext}
                   disabled={answerIdx === null}
                 >
                   {currentQuestion === questions.length - 1 ? "Finish" : "Next"}
                 </Button>
-                <AlertMsg testlink={"/quiz/frontend-development"}/>
+                <AlertMsg testlink={"/quiz/frontend-development"} />
               </div>
             </>
           ) : (

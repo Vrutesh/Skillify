@@ -6,12 +6,25 @@ import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import logo from "../../assets/Images/logo.png";
 import { useAuth0 } from "@auth0/auth0-react";
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Avatar from "../../Common/Avatar/Avatar";
 import TopScrollBar from "../../Common/MotionAnimation/TopScrollBar/TopScrollBar";
-
+import Divider from '@mui/material/Divider';
+import Backdrop from '@mui/material/Backdrop';
+import profilepic from "../../assets/Images/profilepic.png"
+// import CircularProgress from '@mui/material/CircularProgress';
 
 function Navbar() {
+
+  const [openprofile, setOpenProfile] = React.useState(false);
+  const handleCloseProfile = () => {
+    setOpenProfile(false);
+  };
+  const handleOpenProfile = () => {
+    setOpenProfile(true);
+  };
+
+
   const [anchorEt, setAnchorEt] = React.useState(null);
   const opent = Boolean(anchorEt);
   const handleClickt = (event) => {
@@ -42,7 +55,7 @@ function Navbar() {
   return (
     <>
       <header>
-        <TopScrollBar/>
+        <TopScrollBar />
         <nav className="mr" id="nav">
           <div className="nav-logo">
             <Link to={"/"}>
@@ -93,18 +106,26 @@ function Navbar() {
           <div className="nav-auth">
             {isAuthenticated ? (
               <>
-                  <Avatar/>
+        <Button onClick={handleOpenProfile}><Avatar /></Button>
+              <Backdrop
+        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={openprofile}
+        onClick={handleCloseProfile}
+      >
+        <img src={profilepic} style={{width:"400px", height:"400px", borderRadius:"50%"}}/>
+      </Backdrop>
                 <Button
                   variant="text"
                   aria-controls={opent ? "basic-menu" : undefined}
                   aria-haspopup="true"
                   aria-expanded={opent ? "true" : undefined}
                   onClick={handleClickt}
-                  sx={{color:"black"}}
+                  sx={{ color: "black" }}
                 >
                   Profile
-                  <KeyboardArrowDownIcon/>
+                  <KeyboardArrowDownIcon />
                 </Button>
+                
                 <Menu
                   id="basic-menu"
                   anchorEl={anchorEt}
@@ -116,10 +137,11 @@ function Navbar() {
                 >
                   <MenuItem onClick={handleCloset}>
                     <div className="profile">
-                      <img src={user.picture} alt={user.name} />
+                      <img src={profilepic} alt={user.name} />
                       <h2>{user.name}</h2>
                     </div>
                   </MenuItem>
+                  <Divider variant="middle" />
                   <MenuItem onClick={handleCloset}>
                     <Button
                       onClick={() =>
@@ -131,7 +153,6 @@ function Navbar() {
                       Log Out
                     </Button>{" "}
                   </MenuItem>
-                  
                 </Menu>
               </>
             ) : (

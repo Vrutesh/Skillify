@@ -15,9 +15,10 @@ function Home() {
         <div className="overlay">
           <div className="nav-tab mr">
             <img src={homelogo} alt="logo" />
-            <Link to={"/login"}>
-              <Button variant="outlined" onClick={() => loginWithRedirect()}>Sign In</Button>
-            </Link>
+              <Button variant="outlined" onClick={() => loginWithRedirect()} sx={{height:"40px"}}>
+                Sign In
+              </Button>
+           
           </div>
           <video src={Homebg} autoPlay loop muted />
           <div className="main-container">
@@ -35,9 +36,9 @@ function Home() {
                   borderBottomLeftRadius: "20px",
                 }}
               />
-              {/* <Link to={"/register"}> */}
-                <button class="button-36"  onClick={() => loginWithRedirect()}>Sign Up</button>
-              {/* </Link> */}
+              <button class="button-36" onClick={() => loginWithRedirect()}>
+                Sign Up
+              </button>
             </div>
             <Link to={"/about"}>
               <button class="button-37">

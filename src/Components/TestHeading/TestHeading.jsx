@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 import { useAuth0 } from "@auth0/auth0-react";
-// import Alert from '@mui/material/Alert';
 import Snackbar from "../Snackbar/Snackbar";
 
 function TestHeading({ testheading, overview, testinfo, testlink }) {
