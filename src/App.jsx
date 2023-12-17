@@ -20,6 +20,7 @@ import Backend from "./Pages/Quizzes/Backend/Backend";
 function App() {
   return (
     <>
+    
       <div className="app">
         <Router>
           <Routes>

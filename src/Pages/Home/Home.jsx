@@ -5,8 +5,10 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import homelogo from "../../assets/Images/homepagelogo.png";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Home() {
+  const { loginWithRedirect } = useAuth0();
   return (
     <>
       <div className="bg-container">
@@ -14,7 +16,7 @@ function Home() {
           <div className="nav-tab mr">
             <img src={homelogo} alt="logo" />
             <Link to={"/login"}>
-              <Button variant="outlined">Sign In</Button>
+              <Button variant="outlined" onClick={() => loginWithRedirect()}>Sign In</Button>
             </Link>
           </div>
           <video src={Homebg} autoPlay loop muted />
@@ -33,9 +35,9 @@ function Home() {
                   borderBottomLeftRadius: "20px",
                 }}
               />
-              <Link to={"/register"}>
-                <button class="button-36">Sign Up</button>
-              </Link>
+              {/* <Link to={"/register"}> */}
+                <button class="button-36"  onClick={() => loginWithRedirect()}>Sign Up</button>
+              {/* </Link> */}
             </div>
             <Link to={"/about"}>
               <button class="button-37">

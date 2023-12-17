@@ -3,6 +3,8 @@ import "./Quiz.css";
 import { useState } from "react";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import AlertMsg from "../../Common/AlertMsg/AlertMsg"
+
 
 function BackendQuiz({ backendquestions }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -82,11 +84,7 @@ function BackendQuiz({ backendquestions }) {
                   {currentQuestion === backendquestions.length - 1 ? "Finish" : "Next"}
             
                 </Button>
-                <Link to={"/quiz/backend-development"}>
-                  <Button variant="outlined" color="error">
-                    EXIT QUIZ
-                  </Button>
-                </Link>
+                <AlertMsg testlink={"/quiz/backend-development"}/>
               </div>
             </>
           ) : (

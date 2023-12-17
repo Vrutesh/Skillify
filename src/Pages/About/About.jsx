@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Slogo from "../../assets/Images/S-logo.png";
+import Slogoblack from "../../assets/Images/S-logoblack.png";
 
 function About() {
   return (
@@ -8,7 +8,7 @@ function About() {
       <section>
         <div className="hero-section">
           <div className="left-hero-section">
-            <img src={Slogo} alt="slogon" />
+            <img src={Slogoblack} alt="slogo" />
             <h1>Skillify</h1>
             <h4>Leading Quiz Platform for Skill Excellence</h4>
             <p></p>

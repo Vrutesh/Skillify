@@ -5,8 +5,25 @@ import { Button } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import logo from "../../assets/Images/logo.png";
+import { useAuth0 } from "@auth0/auth0-react";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Avatar from "../../Common/Avatar/Avatar";
+
 
 function Navbar() {
+  const [anchorEt, setAnchorEt] = React.useState(null);
+  const opent = Boolean(anchorEt);
+  const handleClickt = (event) => {
+    setAnchorEt(event.currentTarget);
+  };
+  const handleCloset = () => {
+    setAnchorEt(null);
+  };
+
+  const { loginWithRedirect } = useAuth0();
+  const { logout } = useAuth0();
+  const { user, isAuthenticated } = useAuth0();
+
   const [quiz, setQuiz] = React.useState("");
   const handleChange = (event) => {
     setQuiz(event.target.value);
@@ -70,13 +87,56 @@ function Navbar() {
               </MenuItem>
             </Menu>
           </div>
+
           <div className="nav-auth">
-            <Link to={"/login"}>
-              <Button variant="contained">Login</Button>
-            </Link>
-            <Link to={"/register"}>
-              <Button variant="outlined">Register</Button>
-            </Link>
+            {isAuthenticated ? (
+              <>
+                  <Avatar/>
+                <Button
+                  variant="text"
+                  aria-controls={opent ? "basic-menu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={opent ? "true" : undefined}
+                  onClick={handleClickt}
+                  sx={{color:"black"}}
+                >
+                  Profile
+                  <KeyboardArrowDownIcon/>
+                </Button>
+                <Menu
+                  id="basic-menu"
+                  anchorEl={anchorEt}
+                  open={opent}
+                  onClose={handleCloset}
+                  MenuListProps={{
+                    "aria-labelledby": "basic-button",
+                  }}
+                >
+                  <MenuItem onClick={handleCloset}>
+                    <div className="profile">
+                      <img src={user.picture} alt={user.name} />
+                      <h2>{user.name}</h2>
+                    </div>
+                  </MenuItem>
+                  <MenuItem onClick={handleCloset}>
+                    <Button
+                      onClick={() =>
+                        logout({
+                          logoutParams: { returnTo: window.location.origin },
+                        })
+                      }
+                    >
+                      Log Out
+                    </Button>{" "}
+                  </MenuItem>
+                  
+                </Menu>
+              </>
+            ) : (
+              <Button variant="contained" onClick={() => loginWithRedirect()}>
+                Log In
+              </Button>
+            )}
           </div>
         </nav>
       </header>

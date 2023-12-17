@@ -46,7 +46,7 @@ export const jsQuizz = {
         "hsl(120, 100%, 50%)",
       ],
       type: "MCQs",
-      correctAnswer: "color: blue;",
+      correctAnswer: "hsl(120, 100%, 50%)",
     },
     {
       question: " How can you convert a string to an integer in JavaScript?",
