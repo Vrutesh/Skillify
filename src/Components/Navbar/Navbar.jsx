@@ -8,6 +8,7 @@ import logo from "../../assets/Images/logo.png";
 import { useAuth0 } from "@auth0/auth0-react";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Avatar from "../../Common/Avatar/Avatar";
+import TopScrollBar from "../../Common/MotionAnimation/TopScrollBar/TopScrollBar";
 
 
 function Navbar() {
@@ -41,6 +42,7 @@ function Navbar() {
   return (
     <>
       <header>
+        <TopScrollBar/>
         <nav className="mr" id="nav">
           <div className="nav-logo">
             <Link to={"/"}>
