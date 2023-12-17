@@ -13,6 +13,8 @@ import TestHeading from "../../../Components/TestHeading/TestHeading";
 import TestStructure from "../../../Components/TestStructure/TestStructure";
 import FAQs from "../../../Components/FAQs/FAQs";
 import SkillCard from "../../../Components/SkillCard/SkillCard";
+import ProgressBtn from "../../../Components/ProgressBtn/ProgressBtn";
+import Frontendroadmap from "../../../assets/Roadmaps/frontendRoadmap.pdf"
 
 
 const steps = [
@@ -171,8 +173,11 @@ function Frontend() {
                 </Paper>
               )}
             </Box>
-
-            <Button variant="contained" href="\assets\Roadmaps\frontendRoadmap.pdf">Complete Roadmap</Button>
+ 
+           
+            <div className="roadmap-btn">
+              <ProgressBtn pdflink={Frontendroadmap}/>
+            </div>             
             
             
                            

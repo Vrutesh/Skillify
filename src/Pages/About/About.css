@@ -20,6 +20,7 @@
   backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px);
   border: 1px solid rgba(10, 10, 10, 0.03);
+  color: rgb(1, 255, 128);
 }
 
 .hero-section h1 {

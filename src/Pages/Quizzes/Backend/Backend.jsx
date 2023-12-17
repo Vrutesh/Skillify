@@ -13,6 +13,9 @@ import TestHeading from "../../../Components/TestHeading/TestHeading";
 import TestStructure from "../../../Components/TestStructure/TestStructure";
 import FAQs from "../../../Components/FAQs/FAQs";
 import SkillCard from "../../../Components/SkillCard/SkillCard";
+import ProgressBtn from "../../../Components/ProgressBtn/ProgressBtn";
+import Backendroadmap from "../../../assets/Roadmaps/backendroadmap.pdf";
+
 
 const steps = [
   {
@@ -72,7 +75,8 @@ function Backend() {
             testheading="Backend Development Test"
             overview="Overview"
             testinfo=" 
-            Backend development with Node.js, Express.js, MongoDB, and JavaScript involves crafting server-side logic for web applications. Node.js enables efficient, non-blocking event-driven servers, while Express.js simplifies building robust APIs. MongoDB, a NoSQL database, stores and retrieves data, offering flexibility. JavaScript, both on the server (Node.js) and client (frontend), facilitates seamless code integration. This tech stack empowers developers to create scalable, real-time applications, emphasizing agility and versatility in handling data." testlink="/quiz/backend-development/questions"
+            Backend development with Node.js, Express.js, MongoDB, and JavaScript involves crafting server-side logic for web applications. Node.js enables efficient, non-blocking event-driven servers, while Express.js simplifies building robust APIs. MongoDB, a NoSQL database, stores and retrieves data, offering flexibility. JavaScript, both on the server (Node.js) and client (frontend), facilitates seamless code integration. This tech stack empowers developers to create scalable, real-time applications, emphasizing agility and versatility in handling data."
+            testlink="/quiz/backend-development/questions"
           />
 
           <AboutTest
@@ -110,7 +114,11 @@ function Backend() {
             skillcontainerheading="Topics -"
             conditioninfo="● Score more than 20 marks out of 25 to qualify for the next round."
             marks="Total marks - 25"
-            type="Aptitude" btnheading1="Node Js" btnheading2="Express Js" btnheading3="Mongo DB" btnheading4="javascript"
+            type="Aptitude"
+            btnheading1="Node Js"
+            btnheading2="Express Js"
+            btnheading3="Mongo DB"
+            btnheading4="javascript"
           />
 
           <section className="what-to-learn" id="roadmap">
@@ -164,21 +172,17 @@ function Backend() {
                 </Paper>
               )}
             </Box>
+            <div className="roadmap-btn">
+              <ProgressBtn pdflink={Backendroadmap}/>
+            </div>
           </section>
 
           <FAQs
             faqsheading="FAQs (Frequently Asked Questions)"
-            question_1="What is Frontend Development Assessment ?"
-            faqs_content1="A frontend development assessment evaluates a candidate's
-                    proficiency in creating user interfaces using web
-                    technologies. It assesses skills in HTML, CSS, JavaScript,
-                    and framework knowledge for building responsive and
-                    interactive websites."
-            question_2="What knowledge is required to be a Front-end developer ?"
-            faqs_content2="Front-end developer require a knowledge of theses
-                    technologies : Javascript, React JS, HTML5, CSS3. Front-end
-                    developer required skills may also depend of the company and
-                    missions."
+            question_1="What is Backend Development Assessment ?"
+            faqs_content1="Backend development assessment assesses proficiency in Node.js, JavaScript, MongoDB, and Express.js. Skills include server-side scripting, API development, database interaction with MongoDB, and utilizing Express.js for routing. Competence in asynchronous programming and backend architecture design is essential."
+            question_2="What knowledge is required to be a Back-end developer ?"
+            faqs_content2="Backend developers need expertise in server-side programming languages (e.g., Python, Java, Ruby), databases, API design, and server management. Understanding frameworks, scalability, and security principles is crucial."
             question_3="What are the responsibilities of Backend Developer ?"
             faqs_content3="Backend developers are responsible for designing, implementing, and maintaining server-side logic and databases to ensure seamless communication between the front-end and back-end. They handle data storage, security, and API integrations, optimizing the performance and responsiveness of applications. Additionally, backend developers collaborate with cross-functional teams to deliver scalable and efficient solutions."
           />
