@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 
 function TestStructure({
+  teststructureicon,
   teststructureheading,
   testround,
   roundinfo,
@@ -15,19 +16,16 @@ function TestStructure({
 }) {
   return (
     <>
-      <section className="structure-container" id="test-structure">
-        <h1>
-          <i className="bi bi-magic"></i> {teststructureheading}
-        </h1>
+      
         <div className="phase-1 phases">
           <h1>{testround}</h1>
           <p className="round-1-info">{roundinfo}</p>
           <div className="skill-container">
-            <h3>{skillcontainerheading}Topics -</h3>
-            <Button variant="contained">{btnheading1}</Button>
-            <Button variant="contained">{btnheading2}</Button>
-            <Button variant="contained">{btnheading3}</Button>
-            <Button variant="contained">{btnheading4}</Button>
+            <h3>{skillcontainerheading}</h3>
+            {btnheading1 && <Button variant="contained">{btnheading1}</Button>}
+          {btnheading2 && <Button variant="contained">{btnheading2}</Button>}
+          {btnheading3 && <Button variant="contained" >{btnheading3}</Button>}
+          {btnheading4 && <Button variant="contained" >{btnheading4}</Button>}
           </div>
           <div className="round-1-conditions">
             <p>{conditioninfo}</p>
@@ -35,7 +33,7 @@ function TestStructure({
             <h6>{type}</h6>
           </div>
         </div>
-      </section>
+
     </>
   );
 }

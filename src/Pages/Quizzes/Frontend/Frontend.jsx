@@ -111,12 +111,16 @@ function Frontend() {
             icon4={<i class="bi bi-filetype-js"></i>}
           />
 
+<section className="structure-container" id="test-structure">
+
+        <h1><i className="bi bi-magic"></i>Test Structure</h1>
           <TestStructure
-            teststructureheading="Test Structure"
+            
+           
             testround="Round 1 - Aptitude Round"
             roundinfo="Test your Frontend Development smarts with our multiple-choice aptitude round - pick the right code, showcase your problem-solving finesse, and let your skills shine as you unravel challenges designed to elevate your coding expertise !"
-            skillcontainerheading="Topics -"
-            conditioninfo="● Score more than 20 marks out of 25 to qualify for the next round."
+            skillcontainerheading="Skills Required -"
+            conditioninfo="● Get more than 20 marks out of 25 marks to qualify for the next round."
             marks="Total marks - 25"
             type="Aptitude"
             btnheading1="HTML5"
@@ -124,6 +128,27 @@ function Frontend() {
             btnheading3="Javascript"
             btnheading4="React JS"
           />
+          <TestStructure
+            testround="Round 2 - Basic Coding Round (HTML & CSS)"
+            roundinfo="Level up your HTML and CSS skills in our basic coding round. Tackle fundamental challenges, choose the right code snippets, and showcase your problem-solving abilities. Elevate your web development proficiency !"
+            skillcontainerheading="Skills Required -"
+            conditioninfo="● You'll have to solve 2 questions based on HTML & CSS. Solve both Questions to qualify."
+            marks="Total marks - 20"
+            type="Coding"
+            btnheading1="HTML5"
+            btnheading2="CSS3"
+          />
+            <TestStructure
+            testround="Round 3 - JS Algorithm Round"
+            roundinfo="Sharpen your JavaScript skills in our coding challenge! Solve interesting puzzles, show off your problem-solving skills, and become a coding whiz. Level up your JavaScript abilities with our algorithmic round !"
+            skillcontainerheading="Skills Required -"
+            conditioninfo="● You'll have to solve 2 questions based on HTML & CSS. Solve both Questions to qualify."
+            marks="Total marks - 30"
+            type="Coding"
+            btnheading1="Javascript"
+          />
+
+           </section>
 
           <section className="what-to-learn" id="roadmap">
             <h1>

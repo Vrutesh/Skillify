@@ -147,15 +147,18 @@ function Navbar() {
                   </MenuItem>
                   <Divider variant="middle" />
                   <MenuItem onClick={handleCloset}>
+                  
                     <Button
                       onClick={() =>
                         logout({
                           logoutParams: { returnTo: window.location.origin },
-                        })
-                      }
+                          
+                      })
+                    }
                     >
                       Log Out
-                    </Button>{" "}
+                    </Button>
+                    
                   </MenuItem>
                 </Menu>
               </>
