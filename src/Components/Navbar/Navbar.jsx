@@ -12,7 +12,7 @@ import TopScrollBar from "../../Common/MotionAnimation/TopScrollBar/TopScrollBar
 import Divider from '@mui/material/Divider';
 import Backdrop from '@mui/material/Backdrop';
 import profilepic from "../../assets/Images/profilepic.png"
-// import CircularProgress from '@mui/material/CircularProgress';
+
 
 function Navbar() {
 
@@ -112,7 +112,11 @@ function Navbar() {
         open={openprofile}
         onClick={handleCloseProfile}
       >
+        <div className="backdrop-img">
         <img src={profilepic} style={{width:"400px", height:"400px", borderRadius:"50%"}}/>
+        <h2>{user.name}</h2>
+
+        </div>
       </Backdrop>
                 <Button
                   variant="text"

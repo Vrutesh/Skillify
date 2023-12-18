@@ -58,3 +58,15 @@ nav {
 .profile h2 {
   font-size: 0.8rem;
 }
+
+.backdrop-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.backdrop-img h2{
+ font-size: 3rem;
+}
