@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import Slogoblack from "../../assets/Images/S-logoblack.png";
-// import Herobg from "../../assets/Images/Herobackground."
+import Herobg from "../../assets/Images/Herobg.jpg";
 
 function About() {
   return (
@@ -10,12 +10,16 @@ function About() {
         <div className="hero-section">
           <div className="left-hero-section">
             <img src={Slogoblack} alt="slogo" />
-            <h1>Skillify</h1>
-            <h4>Leading Quiz Platform for Skill Excellence</h4>
-            <p></p>
+            <h1 className="loader">Skillify</h1>
+            <h4>Leading Quiz Platform for Skill Excellence.</h4>
+            <p>
+              Where Skills Unleashed, from novices to experts, fostering growth,
+              one assessment at a time. Your journey, your empowerment.
+            </p>
+            <span class="loading"></span>
           </div>
           <div className="right-hero-section">
-          {/* <video src={Herobg} autoPlay loop muted /> */}
+            <img src={Herobg} />
           </div>
         </div>
       </section>
