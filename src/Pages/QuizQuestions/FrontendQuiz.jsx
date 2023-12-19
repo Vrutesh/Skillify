@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import AlertMsg from "../../Common/AlertMsg/AlertMsg";
+import Btn from "../../Common/Btn/Btn";
 
 function FrontendQuiz({ questions }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -12,7 +13,8 @@ function FrontendQuiz({ questions }) {
   const [result, setResult] = useState(resultInitialState);
   const [showResult, setShowResult] = useState(false);
 
-  const { question, choices, correctAnswer } = questions[currentQuestion];
+  const { question, choices, correctAnswer, qualify } =
+    questions[currentQuestion];
 
   const onAnswerClick = (answer, index) => {
     setAnswerIdx(index);
@@ -44,12 +46,21 @@ function FrontendQuiz({ questions }) {
       setCurrentQuestion(0);
       setShowResult(true);
     }
+    if (result.score > 0) {
+      setRedirectToPath("/about");
+    }
   };
 
   const tryAgain = () => {
     setResult(resultInitialState);
     setShowResult(false);
   };
+
+  const resultInfoContent =
+    result.correctAnswer < 20
+      ? "You are Not Qualified for the next Round 😔"
+      : "Woo hoo 🤩! You are Qualified for the next Round";
+
   return (
     <>
       <div className="quiz-section">
@@ -109,17 +120,25 @@ function FrontendQuiz({ questions }) {
               <p className="wrong-answer">
                 Wrong Answer : <span>{result.wrongAnswers}</span>
               </p>
+              <p className="result-info">Status : {resultInfoContent}</p>
 
               <div className="result-btn">
-                <Button
-                  variant="contained"
+                <Btn
                   onClick={tryAgain}
                   className="tryagain-btn"
+                  btnlabel={"Try Again"}
+                />
+                {/* <Link to={"/quiz/frontend-development/coding"}> */}
+                <Button
+                  variant="contained"
+                  className="nextround-btn"
+                  disabled={result.correctAnswer < 20}
                 >
-                  Try Again
+                  Next Round
                 </Button>
+                {/* </Link> */}
                 <Link to={"/quiz/frontend-development"}>
-                  <Button variant="contained">Back to About Page</Button>
+                  <Btn btnlabel={"Back to Quiz Page"} />
                 </Link>
               </div>
             </div>
