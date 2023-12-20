@@ -5,9 +5,8 @@ import heroBg from "../../assets/Images/Herobg.jpg";
 
 function About() {
   return (
-    <div className="mr">
-      <section>
-        <div className="hero-section">
+    <main className="mr">
+        <section className="hero-section">
           <div className="left-hero-section">
             <img src={slogoblack} alt="slogo" />
             <h1 className="loader">Skillify</h1>
@@ -21,8 +20,7 @@ function About() {
           <div className="right-hero-section">
             <img src={heroBg} />
           </div>
-        </div>
-      </section>
+        </section>
 
       <section className="about-content">
         <h1>Skillify</h1>
@@ -119,7 +117,7 @@ function About() {
           </p>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
 
