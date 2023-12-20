@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import slogoblack from "../../assets/Images/S-logoblack.png";
+import slogoblack from "../../assets/Images/Slogoblack.png";
 import heroBg from "../../assets/Images/Herobg.jpg";
 
 function About() {
