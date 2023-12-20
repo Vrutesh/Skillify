@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Homebg from "../../assets/Images/bg2.mp4";
+import homeBg from "../../assets/Images/bg2.mp4";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
@@ -8,12 +8,10 @@ import homelogo from "../../assets/Images/homepagelogo.png";
 import { useAuth0 } from "@auth0/auth0-react";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Avatar from "../../Common/Avatar/Avatar";
 import Divider from '@mui/material/Divider';
 import Backdrop from '@mui/material/Backdrop';
 import profilepic from "../../assets/Images/profilepic.png"
-import { color } from "framer-motion";
 
 function Home() {
 
@@ -114,7 +112,7 @@ function Home() {
              
            
           </div>
-          <video src={Homebg} autoPlay loop muted />
+          <video src={homeBg} autoPlay loop muted />
           <div className="main-container">
             <h1>Let the Quiz Begins</h1>
             <p>Elevate Today, Conquer Tomorrow !</p>

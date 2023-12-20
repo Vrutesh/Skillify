@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
-import Slogoblack from "../../assets/Images/S-logoblack.png";
-import Herobg from "../../assets/Images/Herobg.jpg";
+import slogoblack from "../../assets/Images/S-logoblack.png";
+import heroBg from "../../assets/Images/Herobg.jpg";
 
 function About() {
   return (
@@ -9,7 +9,7 @@ function About() {
       <section>
         <div className="hero-section">
           <div className="left-hero-section">
-            <img src={Slogoblack} alt="slogo" />
+            <img src={slogoblack} alt="slogo" />
             <h1 className="loader">Skillify</h1>
             <h4>Leading Quiz Platform for Skill Excellence.</h4>
             <p>
@@ -19,7 +19,7 @@ function About() {
             <span class="loading"></span>
           </div>
           <div className="right-hero-section">
-            <img src={Herobg} />
+            <img src={heroBg} />
           </div>
         </div>
       </section>
