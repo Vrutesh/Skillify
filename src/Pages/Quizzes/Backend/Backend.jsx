@@ -1,5 +1,5 @@
 import React from "react";
-import "./Backend.css";
+import "../../Quizzes/Page.css";
 import { Button } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";

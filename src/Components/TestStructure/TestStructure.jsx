@@ -17,17 +17,17 @@ function TestStructure({
   return (
     <>
       
-        <div className="phase-1 phases">
+        <div className="phases">
           <h1>{testround}</h1>
-          <p className="round-1-info">{roundinfo}</p>
+          <p className="round-info">{roundinfo}</p>
           <div className="skill-container">
-            <h3>{skillcontainerheading}</h3>
-            {btnheading1 && <Button variant="contained">{btnheading1}</Button>}
+          <h3>{skillcontainerheading}</h3>
+          {btnheading1 && <Button variant="contained">{btnheading1}</Button>}
           {btnheading2 && <Button variant="contained">{btnheading2}</Button>}
           {btnheading3 && <Button variant="contained" >{btnheading3}</Button>}
           {btnheading4 && <Button variant="contained" >{btnheading4}</Button>}
           </div>
-          <div className="round-1-conditions">
+          <div className="round-conditions">
             <p>{conditioninfo}</p>
             <small>{marks}</small>
             <h6>{type}</h6>

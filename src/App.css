@@ -13,3 +13,7 @@
   box-sizing: border-box;
   font-family: "Exo";
 }
+
+.mr {
+  padding: 0 175px;
+}

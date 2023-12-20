@@ -44,7 +44,7 @@ function About() {
         <h1 className="about-skillify-faq-heading">
           Frequently asked questions (FAQs)
         </h1>
-        <p>
+        <p className="about-skillify-faq-info">
           Want to know more about Skillify ? Here are answers to the most
           commonly asked questions about our company.
         </p>
