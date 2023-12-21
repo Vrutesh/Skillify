@@ -107,7 +107,7 @@ function Navbar() {
           <div className="nav-auth">
             {isAuthenticated ? (
               <>
-        <Button onClick={handleOpenProfile}><Avatar /></Button>
+        <Button onClick={handleOpenProfile}><Avatar/></Button>
               <Backdrop
         sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={openprofile}
@@ -116,7 +116,6 @@ function Navbar() {
         <div className="backdrop-img">
         <img src={profilepic} style={{width:"400px", height:"400px", borderRadius:"50%"}}/>
         <h2>{user.name}</h2>
-
         </div>
       </Backdrop>
                 <Button
@@ -126,6 +125,7 @@ function Navbar() {
                   aria-expanded={opent ? "true" : undefined}
                   onClick={handleClickt}
                   sx={{ color: "black" }}
+                  className="profile-tab"
                 >
                   Profile
                   <KeyboardArrowDownIcon />

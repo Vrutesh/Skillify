@@ -234,6 +234,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  main.mr{
+    padding: 0px 30px;
+  }
   .hero-section {
     margin: 20px 0;
     height: 31%;
