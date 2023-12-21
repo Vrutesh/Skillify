@@ -296,3 +296,54 @@
     font-size: 1.2rem;
   }
 }
+
+@media only screen and (max-width: 485px) {
+  .left-hero-section {
+    width: 70%;
+  }
+
+  .left-hero-section h1 {
+    font-size: 1.2rem;
+  }
+
+  .left-hero-section h4 {
+    font-size: 0.6rem;
+  }
+
+  .left-hero-section img {
+    height: 40px;
+  }
+
+  .left-hero-section p {
+    font-size: 0.5rem;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 0.7rem;
+  }
+
+  .about-skillify-faq-info {
+    font-size: 0.7rem;
+  }
+
+  .about-skillify-faq-heading {
+    font-size: 1.2rem;
+  }
+
+  .faq-about-skillify {
+    width: 100%;
+  }
+
+  .faq-about-skillify-heading p {
+    font-size: 1.2rem;
+  }
+
+  .faq-about-skillify-heading h1 {
+    font-size: 1rem;
+  }
+}
+
