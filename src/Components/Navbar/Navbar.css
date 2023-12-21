@@ -82,3 +82,43 @@ nav {
   }
 
 }
+
+@media only screen and (max-width: 485px) {
+  #nav {
+    padding: 0px 0px;
+  }
+  .nav-logo {
+    width: 25%;
+    justify-content: center;
+  }
+  .nav-logo img {
+    height: 25px;
+  }
+
+  .nav-menu {
+    width: 30%;
+    justify-content: center;
+    gap: 0px;
+  }
+
+  #basic-button {
+    font-size: 0.6rem;
+  }
+
+  .nav-auth {
+    width: 31%;
+  }
+
+  .backdrop-img h2 {
+    font-size: 2rem;
+  }
+
+  .backdrop-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-tab {
+    font-size: 0.8rem;
+  }
+}
