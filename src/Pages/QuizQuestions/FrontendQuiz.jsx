@@ -128,15 +128,15 @@ function FrontendQuiz({ questions }) {
                   className="tryagain-btn"
                   btnlabel={"Try Again"}
                 />
-                {/* <Link to={"/quiz/frontend-development/coding"}> */}
+                <Link to={"/quiz/frontend-development/round_2"}>
                 <Button
                   variant="contained"
                   className="nextround-btn"
-                  disabled={result.correctAnswer < 20}
+                  disabled={result.correctAnswer < 0}
                 >
                   Next Round
                 </Button>
-                {/* </Link> */}
+                </Link>
                 <Link to={"/quiz/frontend-development"}>
                   <Btn btnlabel={"Back to Quiz Page"} />
                 </Link>

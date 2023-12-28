@@ -11,6 +11,7 @@ import { jsQuizzBackend } from "./assets/Questions/BackendQuestion";
 import Footer from "./Components/Footer/Footer";
 import Frontend from "./Pages/Quizzes/Frontend/Frontend";
 import Backend from "./Pages/Quizzes/Backend/Backend";
+import Round_2 from "./Pages/CodingRounds/Round_2";
 
 function App() {
   return (
@@ -63,6 +64,15 @@ function App() {
                 <>
                   <BackendQuiz
                     backendquestions={jsQuizzBackend.backendquestions}
+                  />
+                </>
+              }
+            />
+             <Route
+              path="/quiz/frontend-development/round_2"
+              element={
+                <>
+                  <Round_2
                   />
                 </>
               }
