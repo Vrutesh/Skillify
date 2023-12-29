@@ -21,7 +21,7 @@ export default function AlertDialog({ testlink }) {
   return (
     <React.Fragment>
       <Button variant="outlined" color="error" onClick={handleClickOpen}>
-        Exit Quiz
+        Exit
       </Button>
       <Dialog
         open={open}
@@ -32,7 +32,7 @@ export default function AlertDialog({ testlink }) {
         <DialogTitle id="alert-dialog-title">{"Skillify"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Do you want to Exit Quiz ?
+            Do you want to Exit?
           </DialogContentText>
         </DialogContent>
         <DialogActions>

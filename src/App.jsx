@@ -12,6 +12,7 @@ import Footer from "./Components/Footer/Footer";
 import Frontend from "./Pages/Quizzes/Frontend/Frontend";
 import Backend from "./Pages/Quizzes/Backend/Backend";
 import Round_2 from "./Pages/CodingRounds/Round_2";
+import Editor_R2 from "./Pages/CodingRounds/Editor_R2";
 
 function App() {
   return (
@@ -73,6 +74,15 @@ function App() {
               element={
                 <>
                   <Round_2
+                  />
+                </>
+              }
+            />
+            <Route
+              path="/quiz/frontend-development/round_2/coding"
+              element={
+                <>
+                  <Editor_R2
                   />
                 </>
               }

@@ -13,6 +13,7 @@
     "@auth0/auth0-react": "^2.2.4",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@monaco-editor/react": "^4.6.0",
     "@mui/icons-material": "^5.14.19",
     "@mui/material": "^5.14.20",
     "@mui/styled-engine-sc": "^6.0.0-alpha.7",
