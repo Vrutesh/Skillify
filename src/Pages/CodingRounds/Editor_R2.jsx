@@ -84,11 +84,14 @@ function Editor_R2() {
           options={
            {
               fontSize: 14,  
-              autoClosingBrackets: 'always',
               wordWrap: 'on',
               colorDecorators: true,
-              autoIndent: true,
+              autoIndent: 'full',
               tabCompletion: 'on',
+              lineHeight: 24,
+              matchBrackets: 'always',
+              selectOnLineNumbers: true,
+              
             }
           }
         />

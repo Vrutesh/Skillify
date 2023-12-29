@@ -11,7 +11,7 @@ import { jsQuizzBackend } from "./assets/Questions/BackendQuestion";
 import Footer from "./Components/Footer/Footer";
 import Frontend from "./Pages/Quizzes/Frontend/Frontend";
 import Backend from "./Pages/Quizzes/Backend/Backend";
-import Round_2 from "./Pages/CodingRounds/Round_2";
+import Round_2 from "./Pages/CodingRounds/Round_2/Round_2";
 import Editor_R2 from "./Pages/CodingRounds/Editor_R2";
 
 function App() {

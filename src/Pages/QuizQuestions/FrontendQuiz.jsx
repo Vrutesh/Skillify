@@ -123,19 +123,21 @@ function FrontendQuiz({ questions }) {
               <p className="result-info">Status : {resultInfoContent}</p>
 
               <div className="result-btn">
-                <Btn
+                <Button
                   onClick={tryAgain}
                   className="tryagain-btn"
-                  btnlabel={"Try Again"}
-                />
-                <Link to={"/quiz/frontend-development/round_2"}>
-                <Button
                   variant="contained"
-                  className="nextround-btn"
-                  disabled={result.correctAnswer < 0}
                 >
-                  Next Round
+                  Try Again
                 </Button>
+                <Link to={"/quiz/frontend-development/round_2"}>
+                  <Button
+                    variant="contained"
+                    className="nextround-btn"
+                    disabled={result.correctAnswer < 0}
+                  >
+                    Next Round
+                  </Button>
                 </Link>
                 <Link to={"/quiz/frontend-development"}>
                   <Btn btnlabel={"Back to Quiz Page"} />

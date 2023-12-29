@@ -205,65 +205,57 @@ section {
   text-align: justify;
 }
 
-.gototopbtn {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  background-color: white;
+.gototop-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 50px 30px 0;
+}
+
+.navigate-top {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 5%;
-  right: 5%;
-  border-radius: 50%;
+  gap: 10px;
+  padding: 10px;
   border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: 0.5s;
 }
 
-.gototopbtn-border {
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  bottom: 4.34%;
-  right: 4.61%;
-  border-radius: 50%;
-  border: none;
-  background-color: var(--primary-color);
+.navigate-top i {
+  color: var(--primary-color);
 }
 
-@media only screen and (max-width: 600px){
-    .mr{
-        padding: 0 60px;
-    }
+@media only screen and (max-width: 600px) {
+  .mr {
+    padding: 0 60px;
+  }
 
-    .quiz-heading h1{
-        font-size: 1.7rem;
-    }
+  .quiz-heading h1 {
+    font-size: 1.7rem;
+  }
 
-    .quiz-heading h2{
-        font-size: 1rem;
-    }
+  .quiz-heading h2 {
+    font-size: 1rem;
+  }
 
-    .quiz-menu ul li a{
-        font-size: .9rem;
-    }
+  .quiz-menu ul li a {
+    font-size: 0.9rem;
+  }
 
-    .skills-section h1{
-        font-size: 1.5rem;
-    }
+  .skills-section h1 {
+    font-size: 1.5rem;
+  }
 
-    .phases{
-        padding: 0 12px;
-    }
+  .phases {
+    padding: 0 12px;
+  }
 
-    .phases h1{
-        font-size: 1.5rem;
-    }
+  .phases h1 {
+    font-size: 1.5rem;
+  }
 
-
-    .structure-container h3{
-        font-size: .8rem;
-    }
-
+  .structure-container h3 {
+    font-size: 0.8rem;
+  }
 }
-
-

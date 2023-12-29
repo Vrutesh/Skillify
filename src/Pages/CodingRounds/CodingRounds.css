@@ -101,3 +101,8 @@
   align-items: center;
   gap: 20px;
 }
+
+.output-container{
+  height: 100px;
+  color: black;
+}

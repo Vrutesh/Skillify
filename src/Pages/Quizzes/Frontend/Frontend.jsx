@@ -223,11 +223,13 @@ function Frontend() {
           />
         </div>
       </section>
-      <span className="gototopbtn-border">
-        <a href="#nav" className="gototopbtn">
+
+      <section className="gototop-btn">
+        <Button variant="outlined" href="#nav" className="navigate-top">
+          Go to Top
           <i class="fa-solid fa-arrow-up"></i>
-        </a>
-      </span>
+        </Button>
+      </section>
     </>
   );
 }

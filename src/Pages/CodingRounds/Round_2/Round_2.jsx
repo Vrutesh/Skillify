@@ -1,6 +1,6 @@
 import Btn from "../../../Common/Btn/Btn";
 import Editor_R2 from "../Editor_R2";
-import "./CodingRounds.css";
+import "../CodingRounds.css";
 import AlertMsg from "../../../Common/AlertMsg/AlertMsg";
 
 function Round_2() {
