@@ -61,6 +61,9 @@ nav {
 .backdrop-img h2 {
   font-size: 3rem;
 }
+.drawer{
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   #nav {
@@ -71,6 +74,13 @@ nav {
   }
   .nav-logo img {
     height: 30px;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+  .drawer{
+    display: block;
   }
 }
 
@@ -83,13 +93,15 @@ nav {
     gap: 0px;
   }
 
+ 
+
   .nav-auth{
     display: flex;
     flex-wrap: wrap;
   }
 
   #basic-button {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   .backdrop-img h2 {

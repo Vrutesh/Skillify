@@ -12,7 +12,7 @@ import TopScrollBar from "../../Common/MotionAnimation/TopScrollBar/TopScrollBar
 import Divider from '@mui/material/Divider';
 import Backdrop from '@mui/material/Backdrop';
 import profilepic from "../../assets/Images/profilepic.png"
-
+import Drawer from "../Drawer/Drawer" ;
 
 function Navbar() {
 
@@ -167,6 +167,9 @@ function Navbar() {
                 Log In
               </Button>
             )}
+          <div className="drawer">
+            <Drawer/>
+          </div>
           </div>
         </nav>
       </header>
