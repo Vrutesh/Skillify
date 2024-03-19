@@ -3,14 +3,15 @@ nav {
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 24px;
 }
 
 .nav-logo {
-  width: 15%;
   display: flex;
   align-items: center;
+  gap: 80px;
 }
 
 .nav-logo img {
@@ -18,7 +19,6 @@ nav {
 }
 
 .nav-menu {
-  width: 40%;
   display: flex;
   gap: 20px;
 }
@@ -28,7 +28,6 @@ nav {
 }
 
 .nav-auth {
-  width: 45%;
   display: flex;
   justify-content: flex-end;
 }
@@ -51,7 +50,7 @@ nav {
   font-size: 0.8rem;
 }
 
-.backdrop-img{
+.backdrop-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,54 +58,38 @@ nav {
   gap: 10px;
 }
 
-.backdrop-img h2{
- font-size: 3rem;
+.backdrop-img h2 {
+  font-size: 3rem;
 }
 
-
-@media only screen and (max-width: 600px){
-  .nav-logo{
-   width: 25%;
+@media only screen and (max-width: 600px) {
+  #nav {
+    padding: 10px 20px;
   }
-   .nav-logo img{
-   height: 30px;
+  .nav-logo {
+    gap: 30px;
   }
-
-  .nav-menu{
-   width: 50%;
-   justify-content: center;
+  .nav-logo img {
+    height: 30px;
   }
-
-  .nav-auth{
-   width: 35%;
-  }
-
 }
 
 @media only screen and (max-width: 485px) {
-  #nav {
-    padding: 0px 0px;
-  }
   .nav-logo {
-    width: 25%;
-    justify-content: center;
-  }
-  .nav-logo img {
-    height: 25px;
+    gap: 10px;
   }
 
   .nav-menu {
-    width: 30%;
-    justify-content: center;
     gap: 0px;
+  }
+
+  .nav-auth{
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #basic-button {
     font-size: 0.6rem;
-  }
-
-  .nav-auth {
-    width: 31%;
   }
 
   .backdrop-img h2 {
@@ -119,6 +102,6 @@ nav {
   }
 
   .profile-tab {
-    font-size: 0.8rem;
+    font-size: 0.2rem;
   }
 }

@@ -13,9 +13,9 @@ function Footer() {
           </Link>
         </div>
         <div className="footer-social">
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-twitter-x"></i>
-          <i class="bi bi-facebook"></i>
+          <i className="bi bi-instagram"></i>
+          <i className="bi bi-twitter-x"></i>
+          <i className="bi bi-facebook"></i>
         </div>
         <div className="footer-copyrights">
           <p>© Copyright 2023. All Rights Reserved by Skillify.</p>

@@ -128,13 +128,13 @@ function Home() {
                   borderBottomLeftRadius: "20px",
                 }}
               />
-              <button class="button-36" onClick={() => loginWithRedirect()}>
+              <button className="button-36" onClick={() => loginWithRedirect()}>
                 Sign Up
               </button>
             </div>
             <Link to={"/about"}>
-              <button class="button-37">
-                Get Started <i class="fa-solid fa-arrow-right"></i>
+              <button className="button-37">
+                Get Started <i className="fa-solid fa-arrow-right"></i>
               </button>
             </Link>
           </div>

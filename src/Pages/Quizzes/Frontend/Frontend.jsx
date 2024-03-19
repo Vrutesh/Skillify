@@ -97,18 +97,18 @@ function Frontend() {
             skillcardinfo1="Programming fundamentals include core concepts like
                     variables, data types, control structures, functions,
                     algorithms, and problem-solving."
-            icon1={<i class="bi bi-code-slash"></i>}
+            icon1={<i className="bi bi-code-slash"></i>}
             skillcardheading2="HTML, CSS, JS & React"
             skillcardinfo2="Programming fundamentals include core concepts like
                     variables, data types, control structures, functions,
                     algorithms, and problem-solving."
-            icon2={<i class="bi bi-grid-1x2-fill"></i>}
+            icon2={<i className="bi bi-grid-1x2-fill"></i>}
             skillcardheading3="Frontend Frameworks and Libraries"
             skillcardinfo3="Experience with popular frontend frameworks like React, Angular, or Vue.js. Ability to build modular and reusable components."
-            icon3={<i class="bi bi-file-earmark-code-fill"></i>}
+            icon3={<i className="bi bi-file-earmark-code-fill"></i>}
             skillcardheading4="Problem-Solving & Adaptability"
             skillcardinfo4=" Strong analytical and problem-solving skills for addressing coding challenges. Ability to adapt to new technologies, tools, and coding standards."
-            icon4={<i class="bi bi-filetype-js"></i>}
+            icon4={<i className="bi bi-filetype-js"></i>}
           />
 
           <section className="structure-container" id="test-structure">
@@ -227,7 +227,7 @@ function Frontend() {
       <section className="gototop-btn">
         <Button variant="outlined" href="#nav" className="navigate-top">
           Go to Top
-          <i class="fa-solid fa-arrow-up"></i>
+          <i className="fa-solid fa-arrow-up"></i>
         </Button>
       </section>
     </>

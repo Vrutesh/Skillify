@@ -17,7 +17,7 @@ function FAQs({
     <>
       <section className="faq-section" id="faq">
         <h1>
-          <i class="bi bi-magic"></i>
+          <i className="bi bi-magic"></i>
           {faqsheading}
         </h1>
         <Accordion>

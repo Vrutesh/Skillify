@@ -16,7 +16,7 @@ function SkillCard({
     <>
       <div className="skills-section" id="skills">
         <h1>
-          <i class="bi bi-magic"></i> Skills Required
+          <i className="bi bi-magic"></i> Skills Required
         </h1>
         <div className="skill-info">
           <div className="skill-card card">

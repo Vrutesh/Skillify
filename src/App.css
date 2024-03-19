@@ -15,9 +15,26 @@
   color: #000;
   text-decoration: none;
   list-style-type: none;
+  /* overflow-x: hidden; */
 }
 
 .mr {
   padding: 0 175px;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #edf2f8;
+  
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
 }
 

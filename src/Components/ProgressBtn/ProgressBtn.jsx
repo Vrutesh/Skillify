@@ -48,7 +48,7 @@ export default function ProgressBtn({ pdflink }) {
         >
           Download Roadmap
           <i
-            class="bi bi-download"
+            className="bi bi-download"
             style={{
               color: "white",
               fontSize: "1.2rem",

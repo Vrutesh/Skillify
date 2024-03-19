@@ -56,19 +56,19 @@ function Editor_R2() {
               className="active-tab"
               onClick={() => setFileName("index.html")}
             >
-              <i class="fa-brands fa-html5"></i>
+              <i className="fa-brands fa-html5"></i>
             </button>
             <button
               className="active-tab"
               onClick={() => setFileName("style.css")}
             >
-              <i class="fa-brands fa-css3-alt"></i>
+              <i className="fa-brands fa-css3-alt"></i>
             </button>
             <button
               className="active-tab"
               onClick={() => setFileName("index.js")}
             >
-              <i class="fa-brands fa-square-js"></i>
+              <i className="fa-brands fa-square-js"></i>
             </button>
           </div>
         </div>

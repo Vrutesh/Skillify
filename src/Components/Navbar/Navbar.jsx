@@ -62,7 +62,6 @@ function Navbar() {
               {" "}
               <img src={logo} alt="logo" />{" "}
             </Link>
-          </div>
           <div className="nav-menu">
             <Link to={"/about"}>
               <Button id="basic-button" sx={{ color: "black" }}>
@@ -79,7 +78,7 @@ function Navbar() {
               sx={{ color: "black" }}
             >
               Quiz
-              <i class="fa-solid fa-angle-down"></i>
+              <i className="fa-solid fa-angle-down"></i>
             </Button>
             <Menu
               id="basic-menu"
@@ -101,6 +100,7 @@ function Navbar() {
                 Full Stack Development
               </MenuItem>
             </Menu>
+          </div>
           </div>
 
           <div className="nav-auth">

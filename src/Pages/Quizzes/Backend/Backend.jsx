@@ -94,16 +94,16 @@ function Backend() {
           <SkillCard
             skillcardheading1="Server-side Programming"
             skillcardinfo1="Proficiency in server-side languages (e.g., Python, Java, Node.js) and frameworks, enabling the creation of robust, scalable backend logic."
-            icon1={<i class="bi bi-code-slash"></i>}
+            icon1={<i className="bi bi-code-slash"></i>}
             skillcardheading2="Database Management"
             skillcardinfo2="Skills in designing efficient database structures, writing optimized queries, and ensuring data integrity, along with knowledge of database management systems (e.g., MySQL, PostgreSQL, MongoDB)."
-            icon2={<i class="bi bi-database-add"></i>}
+            icon2={<i className="bi bi-database-add"></i>}
             skillcardheading3="API Design and Integration"
             skillcardinfo3="Expertise in crafting RESTful APIs, understanding data serialization formats (e.g., JSON, XML), and integrating backend systems with frontend or third-party services."
-            icon3={<i class="bi bi-intersect"></i>}
+            icon3={<i className="bi bi-intersect"></i>}
             skillcardheading4="Version Control and Collaboration"
             skillcardinfo4=" Proficiency in Git, collaborative workflows, and effective communication with cross-functional teams, including frontend developers and DevOps engineers."
-            icon4={<i class="bi bi-sign-merge-left"></i>}
+            icon4={<i className="bi bi-sign-merge-left"></i>}
           />
 
           <TestStructure
@@ -190,7 +190,7 @@ function Backend() {
       <section className="gototop-btn">
         <Button variant="outlined" href="#nav" className="navigate-top">
           Go to Top
-          <i class="fa-solid fa-arrow-up"></i>
+          <i className="fa-solid fa-arrow-up"></i>
         </Button>
       </section>
     </>

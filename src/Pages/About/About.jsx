@@ -15,7 +15,7 @@ function About() {
               Where Skills Unleashed, from novices to experts, fostering growth,
               one assessment at a time. Your journey, your empowerment.
             </p>
-            <span class="loading"></span>
+            <span className="loading"></span>
           </div>
           <div className="right-hero-section">
             <img src={heroBg} />
