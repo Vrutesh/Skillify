@@ -18,7 +18,7 @@
   z-index: 2;
 }
 
-.nav-log{
+.nav-log {
   display: flex;
   color: #ffffff;
 }
@@ -43,6 +43,7 @@ video {
 .main-container h1 {
   color: white;
   font-size: 5rem;
+  text-align: center;
 }
 
 .main-container p {
@@ -50,6 +51,7 @@ video {
   color: #b5b4b4;
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .signup-field {
@@ -131,24 +133,24 @@ video {
   }
 }
 
-@media only screen and (max-width: 600px){
-  .nav-tab img{
-      height: 50px;
-  }
-  
-  .main-container h1{
-      font-size: 3rem;
+@media only screen and (max-width: 600px) {
+  .nav-tab img {
+    height: 50px;
   }
 
-  .main-container p{
-      font-size: 1.2rem;
+  .main-container h1 {
+    font-size: 3rem;
   }
 
-  #filled-basic{
-      width: 10rem;
+  .main-container p {
+    font-size: 1.2rem;
   }
 
-  .button-37{
-      width: 10rem;
+  #filled-basic {
+    width: 10rem;
+  }
+
+  .button-37 {
+    width: 10rem;
   }
 }
