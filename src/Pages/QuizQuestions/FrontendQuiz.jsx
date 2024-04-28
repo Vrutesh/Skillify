@@ -130,7 +130,7 @@ function FrontendQuiz({ questions }) {
                 >
                   Try Again
                 </Button>
-                <Link to={"/quiz/frontend-development/round_2"}>
+                {/* <Link to={"/quiz/frontend-development/round_2"}> */}
                   <Button
                     variant="contained"
                     className="nextround-btn"
@@ -138,7 +138,7 @@ function FrontendQuiz({ questions }) {
                   >
                     Next Round
                   </Button>
-                </Link>
+                {/* </Link> */}
                 <Link to={"/quiz/frontend-development"}>
                   <Btn btnlabel={"Back to Quiz Page"} />
                 </Link>
