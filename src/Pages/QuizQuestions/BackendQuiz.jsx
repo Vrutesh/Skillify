@@ -126,8 +126,8 @@ function BackendQuiz({ backendquestions }) {
                 >
                   Try Again
                 </Button>
-                <Link to={"/about"}>
-                  <Button variant="contained">Back to About Page</Button>
+                <Link to={"/quiz/backend-development"}>
+                  <Btn btnlabel={"Back to Quiz Page"} />
                 </Link>
               </div>
             </div>
