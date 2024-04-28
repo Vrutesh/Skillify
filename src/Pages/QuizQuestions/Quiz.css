@@ -158,3 +158,10 @@
  justify-content: center;
   gap: 20px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .list {
+    padding: 0 0;
+  }
+}
